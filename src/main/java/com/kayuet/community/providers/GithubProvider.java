@@ -21,17 +21,18 @@ public class GithubProvider {
                 .build();
         try (Response response = client.newCall(request).execute()) {
             String string = response.body().string();
+            //System.out.println(string);
             /**
-             * System.out.println(string);
              * 输出 access_token
              **/
             String token = string.split("&")[0].split("=")[1];
             /**
              * 整合成上面语句
-             * String[] split = string.split("&");
-             * String tokenstr = split[0];
-             * String token = tokenstr.split("=")[1];
              **/
+            //String[] split = string.split("&");
+            //String tokenstr = split[0];
+            //String token = tokenstr.split("=")[1];
+
             return token; //string;
         } catch (Exception e) {
             e.printStackTrace();
