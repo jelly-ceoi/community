@@ -18,3 +18,18 @@
 [Git](https://git-scm.com/download)
 
 [Visual Paradigm](https://www.visual-paradigm.com/cn/)
+
+[Spring](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#boot-features-embedded-database-support)
+
+# 脚本
+```sql
+CREATE TABLE USER(
+    "ID" INTEGER AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    "ACCOUNT_ID" CHARACTER VARYING(100),
+    "NAME" CHARACTER VARYING(50),
+    "TOKEN" CHARACTER(36),
+    "GMT_CREATE" BIGINT,
+    "GMT_MODIFIED" BIGINT
+)
+
+```
